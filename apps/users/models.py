@@ -24,7 +24,7 @@ class Users(AbstractBaseUser):
 class PhoneVerifyCode(models.Model):
     code = models.CharField(max_length=6, verbose_name='手机验证码')
     phone = models.CharField(max_length=11, verbose_name='手机号')
-    send_time = models.DateTimeField(default=datetime.now, verbose_name='发送时间')
+    add_time = models.DateTimeField(default=datetime.now, verbose_name='发送时间')
 
     class Meta:
         verbose_name = '手机验证码'

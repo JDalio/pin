@@ -12,8 +12,8 @@ class Goods(models.Model):
     goods_cost = models.FloatField(verbose_name='商品进价成本')
     packing_cost = models.FloatField(verbose_name='商品包装成本')
     kind = models.IntegerField(verbose_name='商品种类')
-    add_time = models.DateTimeField(default=datetime.now, verbose_name='加入时间')
     is_new=models.BooleanField(default=False,verbose_name='是否为新品')
+    add_time = models.DateTimeField(default=datetime.now, verbose_name='加入时间')
 
     class Meta:
         verbose_name = '商品信息'
